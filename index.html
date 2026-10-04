@@ -3,101 +3,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Personal portfolio of Rammorkhandikar — selected work, skills, and contact.">
-  <title>Rammorkhandikar — Portfolio</title>
+  <meta name="description" content="Shriram Morkhandikar — Software Engineer and AI / GenAI Engineer portfolio.">
+  <title>Shriram Morkhandikar — AI / GenAI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="noise"></div>
   <header class="nav">
-    <a class="brand" href="#top" aria-label="Home"><span>R</span>Rammorkhandikar</a>
+    <a class="brand" href="#top"><span>SM</span> Shriram Morkhandikar</a>
     <nav>
-      <a href="#work">Work</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
+      <a href="#work">Work</a><a href="#stack">Stack</a><a href="#about">About</a><a href="#contact">Contact</a>
     </nav>
-    <a class="nav-cta" href="#contact">Let's talk <span>↗</span></a>
+    <a class="nav-cta" href="https://www.linkedin.com/in/rammorkhandikar" target="_blank" rel="noreferrer">LinkedIn ↗</a>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span class="dot"></span> Available for select projects</p>
-        <h1>Building digital<br><em>experiences</em> that matter.</h1>
-        <p class="hero-text">A modern portfolio for a curious builder who turns ideas into clean, useful, and memorable digital products.</p>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Pune · India · Software + AI</p>
+        <h1>Software engineer<br>building <em>useful AI.</em></h1>
+        <p class="hero-text">Backend and full-stack engineer with hands-on experience across machine learning, PyTorch, Transformers, LLM applications, RAG, agents, APIs and production-oriented AI systems.</p>
         <div class="hero-actions">
-          <a class="button primary" href="#work">View selected work <span>↓</span></a>
-          <a class="button ghost" href="#contact">Get in touch</a>
+          <a class="button primary" href="#work">Explore my work ↓</a>
+          <a class="button ghost" href="mailto:rammorkhandikar@gmail.com">Email me</a>
+        </div>
+        <div class="quick-stats">
+          <div><strong>2022–Present</strong><span>Teaching, engineering & freelance</span></div>
+          <div><strong>AI / GenAI</strong><span>RAG · Agents · LLMs · ML</span></div>
+          <div><strong>Full stack</strong><span>React · Next.js · APIs · SQL</span></div>
         </div>
       </div>
-      <div class="hero-art reveal">
-        <div class="orb orb-one"></div>
-        <div class="orb orb-two"></div>
-        <div class="orbit"></div>
-        <div class="art-card">
-          <span>01 / 04</span>
-          <strong>Ideas →</strong>
-          <strong>Interfaces →</strong>
-          <strong>Impact.</strong>
+      <aside class="profile-card">
+        <div class="portrait-frame">
+          <img src="profile_professional.jpg" alt="Shriram Morkhandikar professional portrait" onerror="this.onerror=null;this.src='https://avatars.githubusercontent.com/u/224210382?v=4';">
         </div>
-      </div>
+        <div class="profile-caption">
+          <div><span>SHRIRAM MORKHANDIKAR</span><strong>AI / GENAI ENGINEER</strong></div>
+          <span class="availability">OPEN TO OPPORTUNITIES</span>
+        </div>
+      </aside>
     </section>
 
-    <section class="ticker" aria-label="Capabilities">
-      <div>DESIGN</div><i>✦</i><div>DEVELOPMENT</div><i>✦</i><div>PRODUCT</div><i>✦</i><div>CREATIVE TECH</div><i>✦</i>
-      <div>DESIGN</div><i>✦</i><div>DEVELOPMENT</div><i>✦</i><div>PRODUCT</div><i>✦</i>
+    <section class="trust-strip">
+      <span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>FastAPI</span><span>React / Next.js</span><span>PostgreSQL</span><span>Docker</span><span>LLM Systems</span>
     </section>
 
     <section class="section work" id="work">
-      <div class="section-head reveal">
-        <p class="eyebrow">Selected work</p>
-        <h2>A few things<br>I've been making.</h2>
+      <div class="section-head">
+        <div><p class="eyebrow">Portfolio / 01</p><h2>Real systems.<br>Clear engineering.</h2></div>
+        <p class="section-note">Completed work from my resume, plus clearly labelled concepts I can build next.</p>
       </div>
-      <div class="projects">
-        <article class="project project-large reveal">
-          <div class="project-visual visual-one"><span>01</span><div class="visual-word">NOVA</div></div>
-          <div class="project-meta"><div><h3>Nova — Product concept</h3><p>Strategy · UI/UX · Front-end</p></div><a href="#" aria-label="View Nova project">↗</a></div>
+
+      <div class="filters" role="tablist" aria-label="Project filters">
+        <button class="filter active" data-filter="all">All</button>
+        <button class="filter" data-filter="ai">AI / GenAI</button>
+        <button class="filter" data-filter="web">Web / Full-stack</button>
+        <button class="filter" data-filter="concept">Build next</button>
+      </div>
+
+      <div class="project-grid">
+        <article class="project featured" data-category="ai">
+          <div class="project-image image-rag"><span>01 / AI</span><b>RAG<br>ENGINE</b></div>
+          <div class="project-body"><p class="tag">Production RAG Application</p><h3>From documents to cited answers.</h3><p>Document extraction → chunking → embeddings → vector database → retrieval/reranking → LLM → cited responses, with authentication, document management, streaming and evaluation.</p><div class="tech"><span>Python</span><span>FastAPI</span><span>Vector DB</span><span>LLM</span></div><button class="details" data-target="rag-details">View architecture +</button><div class="details-panel" id="rag-details">A production-minded architecture with ingestion, retrieval, reranking, generation, citations, logging and RAG evaluation as first-class components.</div></div>
         </article>
-        <article class="project reveal">
-          <div class="project-visual visual-two"><span>02</span><div class="mini-grid"></div></div>
-          <div class="project-meta"><div><h3>Signal — Digital system</h3><p>Brand · Design system · Web</p></div><a href="#" aria-label="View Signal project">↗</a></div>
+
+        <article class="project" data-category="ai">
+          <div class="project-image image-agent"><span>02 / AI</span><b>AGENTIC<br>WORKFLOW</b></div>
+          <div class="project-body"><p class="tag">Agentic AI System</p><h3>LLMs that can actually use tools.</h3><p>Tool/function calling, state and memory, multiple tools, validation, retries, guardrails and MCP concepts connected through a backend/API workflow.</p><div class="tech"><span>LLMs</span><span>Agents</span><span>MCP</span><span>FastAPI</span></div><button class="details" data-target="agent-details">View architecture +</button><div class="details-panel" id="agent-details">A controlled agent loop: plan → choose tool → validate → execute → observe → retry or answer, with explicit boundaries around state and tool permissions.</div></div>
         </article>
-        <article class="project reveal">
-          <div class="project-visual visual-three"><span>03</span><div class="stack-card"></div></div>
-          <div class="project-meta"><div><h3>Frame — Creative tool</h3><p>Product · Prototyping · Development</p></div><a href="#" aria-label="View Frame project">↗</a></div>
+
+        <article class="project" data-category="ai">
+          <div class="project-image image-ml"><span>03 / ML</span><b>ML<br>PIPELINE</b></div>
+          <div class="project-body"><p class="tag">Production ML Prediction System</p><h3>Models packaged for real use.</h3><p>End-to-end preprocessing, feature engineering, training and evaluation, followed by FastAPI model serving, Dockerization, tests and reproducible documentation.</p><div class="tech"><span>scikit-learn</span><span>FastAPI</span><span>Docker</span><span>MLOps</span></div></div>
+        </article>
+
+        <article class="project" data-category="web">
+          <div class="project-image image-web"><span>04 / WEB</span><b>FULL<br>STACK</b></div>
+          <div class="project-body"><p class="tag">Freelance / Client Work</p><h3>Business websites that ship.</h3><p>Full-stack applications across medical, NGO and content domains, covering frontend, backend, databases, REST APIs, authentication, payments and deployment.</p><div class="client-links"><a href="https://drbushra.in" target="_blank" rel="noreferrer">DrBushra.in ↗</a><a href="https://gruuakanksha.in" target="_blank" rel="noreferrer">GruuAkanksha.in ↗</a><a href="https://hygieneplus.in" target="_blank" rel="noreferrer">HygienePlus.in ↗</a></div></div>
+        </article>
+
+        <article class="project concept" data-category="concept">
+          <div class="project-image image-resume"><span>05 / BUILD NEXT</span><b>RESUME<br>INTELLIGENCE</b></div>
+          <div class="project-body"><p class="tag">Concept I can build next</p><h3>AI Resume Intelligence Platform.</h3><p>Upload a resume and job description, extract structured skills, identify gaps, generate targeted improvements and return evidence-backed recommendations.</p><div class="tech"><span>RAG</span><span>Embeddings</span><span>FastAPI</span><span>Next.js</span></div></div>
+        </article>
+
+        <article class="project concept" data-category="concept">
+          <div class="project-image image-research"><span>06 / BUILD NEXT</span><b>RESEARCH<br>COPILOT</b></div>
+          <div class="project-body"><p class="tag">Concept I can build next</p><h3>Multi-agent research copilot.</h3><p>Planner, web/document researcher, source verifier and synthesis agent working through a traceable workflow with citations and human approval checkpoints.</p><div class="tech"><span>Agents</span><span>Tools</span><span>RAG</span><span>Evaluation</span></div></div>
+        </article>
+
+        <article class="project concept" data-category="concept">
+          <div class="project-image image-vision"><span>07 / BUILD NEXT</span><b>VISION<br>QA</b></div>
+          <div class="project-body"><p class="tag">Concept I can build next</p><h3>Video & image intelligence system.</h3><p>Extend my annotation background into an AI workflow for object detection, event extraction, searchable clips, review queues and analytics dashboards.</p><div class="tech"><span>PyTorch</span><span>CV</span><span>Video</span><span>FastAPI</span></div></div>
         </article>
       </div>
     </section>
 
-    <section class="section about" id="about">
-      <div class="about-label reveal"><p class="eyebrow">A little about me</p></div>
-      <div class="about-copy reveal">
-        <p class="big-copy">I like working where <span>design, technology, and ideas</span> overlap.</p>
-        <p>I’m interested in making digital experiences that feel simple without being ordinary. This site is intentionally easy to customize — swap in your real bio, projects, links, and contact details to make it fully yours.</p>
-        <div class="skills">
-          <span>Web Design</span><span>Frontend</span><span>Product Thinking</span><span>Creative Development</span><span>Visual Systems</span>
-        </div>
+    <section class="section stack" id="stack">
+      <div class="section-head"><div><p class="eyebrow">Portfolio / 02</p><h2>The engineering<br>toolkit.</h2></div></div>
+      <div class="stack-grid">
+        <div class="stack-card"><span>01</span><h3>AI & ML</h3><p>Machine learning · feature engineering · preprocessing · model selection · evaluation · PyTorch · neural networks · CNNs · sequence models</p></div>
+        <div class="stack-card"><span>02</span><h3>LLM Engineering</h3><p>Prompting · structured output · tool/function calling · inference · Transformers · Hugging Face · fine-tuning concepts</p></div>
+        <div class="stack-card"><span>03</span><h3>RAG & Agents</h3><p>Chunking · embeddings · vector search · metadata filtering · reranking · citations · planning · memory · guardrails · MCP concepts</p></div>
+        <div class="stack-card"><span>04</span><h3>Production</h3><p>FastAPI · Docker · deployment · logging · observability · latency/cost tracking · monitoring · MLOps / LLMOps concepts</p></div>
+        <div class="stack-card"><span>05</span><h3>Web</h3><p>React.js · Next.js · Node.js · REST APIs · PostgreSQL · Prisma · authentication · payments · SEO</p></div>
+        <div class="stack-card"><span>06</span><h3>Languages</h3><p>Python · JavaScript · C# · SQL · Java</p></div>
       </div>
+    </section>
+
+    <section class="section media">
+      <div class="section-head"><div><p class="eyebrow">Portfolio / 03</p><h2>Ideas, references<br>& visual context.</h2></div><p class="section-note">No auto-play, no distracting motion — just useful media you can explore.</p></div>
+      <div class="media-grid">
+        <a class="media-card media-ai" href="https://www.youtube.com/results?search_query=transformers+attention+mechanism+explained" target="_blank" rel="noreferrer"><span>VIDEO REFERENCE</span><strong>Transformers & attention</strong><small>Explore explainers on the architecture behind modern LLMs ↗</small></a>
+        <a class="media-card media-rag" href="https://www.youtube.com/results?search_query=RAG+retrieval+augmented+generation+explained" target="_blank" rel="noreferrer"><span>VIDEO REFERENCE</span><strong>Retrieval-augmented generation</strong><small>See how retrieval and generation fit together ↗</small></a>
+        <a class="media-card media-dev" href="https://unsplash.com/s/photos/artificial-intelligence" target="_blank" rel="noreferrer"><span>VISUAL REFERENCE</span><strong>AI / engineering visual library</strong><small>Architecture, hardware, code and systems imagery ↗</small></a>
+      </div>
+    </section>
+
+    <section class="section timeline" id="about">
+      <div class="section-head"><div><p class="eyebrow">Portfolio / 04</p><h2>The path so far.</h2></div></div>
+      <div class="timeline-list">
+        <div><span>2022–2023</span><div><h3>Technical Mentor / Coding Instructor</h3><p>Taught HTML, CSS, JavaScript, DSA, OOP, React, Next.js, Node.js and SQL. Mentored practical projects and deployment workflows.</p></div></div>
+        <div><span>Jan–Nov 2023</span><div><h3>Data Annotation Engineer · Qualities Global</h3><p>Annotated vehicles and objects in image/video datasets and football footage, including tracking, jersey numbers, goals, fouls and match events.</p></div></div>
+        <div><span>Jan–Dec 2024</span><div><h3>Jr. Software Developer · Stapatya Software</h3><p>Built interactive data-driven websites with C#, SQL and backend APIs, focusing on responsive interfaces, data visualisation and backend optimisation.</p></div></div>
+        <div><span>2024–Present</span><div><h3>Freelancer · Web & App Development</h3><p>Full-stack delivery across medical, NGO and content platforms, spanning APIs, databases, auth, payments, SEO and deployment.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section education">
+      <div class="education-card"><p class="eyebrow">Education</p><h3>B.E. Computer Science</h3><p>MMIT, Lohegaon, Pune · 2023</p><span>HSC · Keshavraj Mahavidyalay, Latur · 2018</span><span>SSC · Anjani Prashala, Naldurg · 2016</span></div>
+      <div class="about-note"><p class="eyebrow">How I work</p><p>Start with the user problem. Make the system observable. Keep the architecture understandable. Ship a small useful version, then improve it with evidence.</p></div>
     </section>
 
     <section class="section contact" id="contact">
-      <div class="contact-inner reveal">
-        <p class="eyebrow">Have an idea?</p>
-        <h2>Let's make<br><em>something great.</em></h2>
-        <a class="email" href="mailto:iammrrammorkhandikar@gmail.com">iammrrammorkhandikar@gmail.com <span>↗</span></a>
-        <div class="socials">
-          <a href="https://github.com/mrrammorkhandikar" target="_blank" rel="noreferrer">GitHub ↗</a>
-          <a href="#" aria-label="LinkedIn placeholder">LinkedIn ↗</a>
-          <a href="#" aria-label="Instagram placeholder">Instagram ↗</a>
-        </div>
+      <div class="contact-inner">
+        <p class="eyebrow">Let's build</p>
+        <h2>Useful software.<br><em>Real outcomes.</em></h2>
+        <p class="contact-copy">Available for software engineering, AI / GenAI and full-stack opportunities, as well as selected freelance projects.</p>
+        <div class="contact-actions"><a class="button primary" href="mailto:rammorkhandikar@gmail.com">rammorkhandikar@gmail.com ↗</a><button class="button ghost copy-email" data-email="rammorkhandikar@gmail.com">Copy email</button></div>
+        <div class="socials"><a href="https://www.linkedin.com/in/rammorkhandikar" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/mrrammorkhandikar" target="_blank" rel="noreferrer">GitHub ↗</a><a href="tel:+917218860925">+91 7218860925</a></div>
       </div>
     </section>
   </main>
-
-  <footer><span>© 2026 Rammorkhandikar</span><span>Designed & built with intention.</span></footer>
+  <footer><span>© 2026 Shriram Morkhandikar</span><span>Software Engineer · AI / GenAI Engineer · Pune</span></footer>
   <script src="script.js"></script>
 </body>
 </html>
