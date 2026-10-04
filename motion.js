@@ -113,4 +113,15 @@
     if (!wide.matches) clearReel();
     else setupReel();
   });
+
+  var hero = document.querySelector(".hero-art");
+  if (hero && !reduce) {
+    var floats = hero.querySelectorAll(".float-win, .signal-row");
+    window.addEventListener("scroll", function () {
+      var y = Math.min(window.scrollY, 420);
+      floats.forEach(function (node, index) {
+        node.style.transform = "translateY(" + (y * (index % 2 ? -0.04 : 0.06)) + "px)";
+      });
+    }, { passive: true });
+  }
 })();
