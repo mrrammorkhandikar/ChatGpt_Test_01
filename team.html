@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="craft.css">
 <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")}catch(e){}</script>
 </head>
 <body>
@@ -32,7 +33,7 @@
 <main id="content">
   <section class="page-hero">
     <p class="eyebrow">Team</p>
-    <h1>The right specialists for <em class="grad">each product.</em></h1>
+    <h1>The right specialists<br>for the product.</h1>
     <p>A focused delivery group across design, engineering, AI, mobile, QA and project coordination. People join the work the product actually needs.</p>
   </section>
 
@@ -57,14 +58,15 @@
       </div>
       <p>The short description is always visible. The panel adds the responsibilities and the stage where that role usually arrives.</p>
     </div>
-    <div class="switch team-switch" data-switch>
-      <div class="switch-nav" role="tablist" aria-label="Team roles">
-        <button type="button" class="is-on" role="tab" data-panel="role-fs" aria-controls="role-fs"><img src="assets/team-2.png" alt=""><span><strong>Full-Stack Developers</strong><small>Web &amp; backend</small></span></button>
-        <button type="button" role="tab" data-panel="role-ux" aria-controls="role-ux"><img src="assets/team-3.png" alt=""><span><strong>UI/UX Designers</strong><small>Product design</small></span></button>
-        <button type="button" role="tab" data-panel="role-mobile" aria-controls="role-mobile"><img src="assets/team-4.png" alt=""><span><strong>Mobile App Developers</strong><small>Android &amp; cross-platform</small></span></button>
-        <button type="button" role="tab" data-panel="role-ai" aria-controls="role-ai"><img src="assets/team-5.png" alt=""><span><strong>AI/ML Engineers</strong><small>RAG &amp; automation</small></span></button>
-        <button type="button" role="tab" data-panel="role-qa" aria-controls="role-qa"><img src="assets/team-6.png" alt=""><span><strong>Testers &amp; QA</strong><small>Quality &amp; release</small></span></button>
-        <button type="button" role="tab" data-panel="role-pm" aria-controls="role-pm"><img src="assets/team-7.png" alt=""><span><strong>Project Manager</strong><small>Planning &amp; delivery</small></span></button>
+    <div class="switch team-switch constellation" data-switch>
+      <div class="orbit switch-nav" role="tablist" aria-label="Team roles">
+        <div class="hub">Product</div>
+        <button type="button" class="is-on" role="tab" data-panel="role-fs" aria-controls="role-fs"><img src="assets/team-2.png" alt=""><span><strong>Engineering</strong><small>Web &amp; backend</small></span></button>
+        <button type="button" role="tab" data-panel="role-ux" aria-controls="role-ux"><img src="assets/team-3.png" alt=""><span><strong>Design</strong><small>Product design</small></span></button>
+        <button type="button" role="tab" data-panel="role-mobile" aria-controls="role-mobile"><img src="assets/team-4.png" alt=""><span><strong>Mobile</strong><small>Android &amp; cross-platform</small></span></button>
+        <button type="button" role="tab" data-panel="role-ai" aria-controls="role-ai"><img src="assets/team-5.png" alt=""><span><strong>AI / ML</strong><small>RAG &amp; automation</small></span></button>
+        <button type="button" role="tab" data-panel="role-qa" aria-controls="role-qa"><img src="assets/team-6.png" alt=""><span><strong>QA</strong><small>Quality &amp; release</small></span></button>
+        <button type="button" role="tab" data-panel="role-pm" aria-controls="role-pm"><img src="assets/team-7.png" alt=""><span><strong>Project</strong><small>Planning &amp; delivery</small></span></button>
       </div>
       <div>
         <article class="pane is-on" id="role-fs" data-pane role="tabpanel">
@@ -126,5 +128,6 @@
 </footer>
 </div>
 <script src="script.js"></script>
+<script src="motion.js"></script>
 </body>
 </html>

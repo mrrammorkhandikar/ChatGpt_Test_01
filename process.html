@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="craft.css">
 <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")}catch(e){}</script>
 </head>
 <body>
@@ -37,12 +38,16 @@
   </section>
   <section class="page-grid">
     <div class="switch process-switch" data-switch>
+      <div class="process-side">
+      <p class="mega-num" data-mega aria-hidden="true">01</p>
       <div class="switch-nav" role="tablist" aria-label="Process stages">
         <button type="button" class="is-on" role="tab" data-panel="step-1" aria-controls="step-1"><b>01</b><span>Explore &amp; Plan<small>Users, workflow, scope</small></span></button>
         <button type="button" role="tab" data-panel="step-2" aria-controls="step-2"><b>02</b><span>Design &amp; Prototype<small>Flows and screens</small></span></button>
         <button type="button" role="tab" data-panel="step-3" aria-controls="step-3"><b>03</b><span>Develop &amp; Test<small>Cycles and checks</small></span></button>
         <button type="button" role="tab" data-panel="step-4" aria-controls="step-4"><b>04</b><span>Deploy &amp; Support<small>Launch and after</small></span></button>
       </div>
+      </div>
+      <div class="process-chapters">
       <article class="pane is-on" id="step-1" data-pane role="tabpanel">
         <p class="eyebrow">Stage 01</p>
         <h3>Explore &amp; Plan</h3>
@@ -71,6 +76,7 @@
         <h4>What launch includes</h4>
         <ul class="check"><li>The environment the product runs in</li><li>A handover the team can follow</li><li>The release itself</li><li>Support after the first real users arrive</li></ul>
       </article>
+      </div>
     </div>
   </section>
   <section class="section">
@@ -99,5 +105,6 @@
 </footer>
 </div>
 <script src="script.js"></script>
+<script src="motion.js"></script>
 </body>
 </html>

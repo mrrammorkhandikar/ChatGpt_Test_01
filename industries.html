@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="craft.css">
 <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")}catch(e){}</script>
 </head>
 <body>
@@ -36,8 +37,23 @@
     <p>We adapt the interface, roles, data and automation to the business. The examples below are starting points, not a closed list. Each one shows the workflow and what a product can be asked to handle.</p>
   </section>
   <section class="page-grid">
-    <div class="modules">
-      <article class="module" id="legal">
+    <div class="sector-stage switch" data-switch>
+      <div class="sector-list switch-nav" role="tablist" aria-label="Industries">
+        <button type="button" class="is-on" role="tab" data-panel="legal" aria-controls="legal">Legal</button>
+        <button type="button" role="tab" data-panel="healthcare" aria-controls="healthcare">Healthcare</button>
+        <button type="button" role="tab" data-panel="education" aria-controls="education">Education</button>
+        <button type="button" role="tab" data-panel="business" aria-controls="business">Business</button>
+        <button type="button" role="tab" data-panel="social" aria-controls="social">Social</button>
+        <button type="button" role="tab" data-panel="commerce" aria-controls="commerce">Commerce</button>
+        <button type="button" role="tab" data-panel="ngo" aria-controls="ngo">Non-profit</button>
+        <button type="button" role="tab" data-panel="finance" aria-controls="finance">Finance</button>
+        <button type="button" role="tab" data-panel="realestate" aria-controls="realestate">Real Estate</button>
+        <button type="button" role="tab" data-panel="travel" aria-controls="travel">Travel</button>
+        <button type="button" role="tab" data-panel="media" aria-controls="media">Media</button>
+        <button type="button" role="tab" data-panel="custom" aria-controls="custom">Custom</button>
+      </div>
+      <div class="sector-canvas">
+      <article class="module pane is-on" id="legal" data-pane role="tabpanel">
         <span class="top"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#legal"/></svg></span>
         <h3>Legal &amp; Law Firms</h3>
         <p>Matters, documents and questions tend to live in separate folders. The product brings the working set into one environment.</p>
@@ -45,7 +61,7 @@
         <ul class="caps"><li>Matter tracking</li><li>Document rooms</li><li>Task assignment</li><li>Knowledge assistant</li></ul>
         <ol class="flow"><li>Matter</li><li>Documents</li><li>Tasks</li><li>Assistant</li><li>Access</li></ol>
       </article>
-      <article class="module" id="healthcare">
+      <article class="module pane" id="healthcare" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#health"/></svg>
         <h3>Healthcare</h3>
         <p>Booking is the front door. The product also has to show the day to the clinic and tell the patient what happens next.</p>
@@ -53,7 +69,7 @@
         <ul class="caps"><li>Appointment booking</li><li>Doctor and patient dashboards</li><li>Payments</li><li>Notifications</li></ul>
         <ol class="flow"><li>Appointment</li><li>Confirmation</li><li>Payment</li><li>Dashboard</li><li>Notification</li></ol>
       </article>
-      <article class="module" id="education">
+      <article class="module pane" id="education" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#education"/></svg>
         <h3>Education</h3>
         <p>A course is content, progress and the admin work of keeping both current. Learners and staff need different screens.</p>
@@ -61,7 +77,7 @@
         <ul class="caps"><li>Courses</li><li>Assessments</li><li>Progress</li><li>Payments</li><li>Admin content</li></ul>
         <ol class="flow"><li>Course</li><li>Lesson</li><li>Assessment</li><li>Progress</li><li>Admin</li></ol>
       </article>
-      <article class="module" id="business">
+      <article class="module pane" id="business" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#business"/></svg>
         <h3>Business &amp; Corporate</h3>
         <p>Internal work is usually a queue: a request, an approval, a record, a report. The product is the queue, with roles.</p>
@@ -69,7 +85,7 @@
         <ul class="caps"><li>Internal portals</li><li>Approvals</li><li>Reporting</li><li>Role-based tools</li></ul>
         <ol class="flow"><li>Request</li><li>Role</li><li>Approval</li><li>Record</li><li>Report</li></ol>
       </article>
-      <article class="module" id="social">
+      <article class="module pane" id="social" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#social"/></svg>
         <h3>Social &amp; Community</h3>
         <p>People post, message and gather. The product also needs a way to moderate what should not stay up.</p>
@@ -77,7 +93,7 @@
         <ul class="caps"><li>Profiles</li><li>Posts</li><li>Groups</li><li>Messaging</li><li>Moderation</li></ul>
         <ol class="flow"><li>Profile</li><li>Post</li><li>Group</li><li>Message</li><li>Moderation</li></ol>
       </article>
-      <article class="module" id="commerce">
+      <article class="module pane" id="commerce" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#commerce"/></svg>
         <h3>E-commerce</h3>
         <p>The storefront is the visible half. Inventory, checkout and the order desk are what keep it moving.</p>
@@ -85,7 +101,7 @@
         <ul class="caps"><li>Catalog</li><li>Inventory</li><li>Checkout</li><li>Orders</li></ul>
         <ol class="flow"><li>Catalog</li><li>Cart</li><li>Checkout</li><li>Order</li><li>Inventory</li></ol>
       </article>
-      <article class="module" id="ngo">
+      <article class="module pane" id="ngo" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#ngo"/></svg>
         <h3>NGO &amp; Non-profit</h3>
         <p>Campaigns ask for attention, money, time and a story. Reporting has to be readable by the people who gave.</p>
@@ -93,7 +109,7 @@
         <ul class="caps"><li>Campaigns</li><li>Donations</li><li>Volunteers</li><li>Events</li><li>Reporting</li></ul>
         <ol class="flow"><li>Campaign</li><li>Donation</li><li>Volunteer</li><li>Event</li><li>Report</li></ol>
       </article>
-      <article class="module" id="finance">
+      <article class="module pane" id="finance" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#finance"/></svg>
         <h3>Finance &amp; Accounting</h3>
         <p>Invoices and expenses only help if approvals and exports are part of the same path.</p>
@@ -101,7 +117,7 @@
         <ul class="caps"><li>Invoices</li><li>Expenses</li><li>Approvals</li><li>Dashboards</li><li>Exports</li></ul>
         <ol class="flow"><li>Invoice</li><li>Expense</li><li>Approval</li><li>Dashboard</li><li>Export</li></ol>
       </article>
-      <article class="module" id="realestate">
+      <article class="module pane" id="realestate" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#estate"/></svg>
         <h3>Real Estate</h3>
         <p>A lead is not a sale. The product tracks the property, the visit and where the pipeline stands.</p>
@@ -109,7 +125,7 @@
         <ul class="caps"><li>Lead pipelines</li><li>Property records</li><li>Agent visits</li><li>Reporting</li></ul>
         <ol class="flow"><li>Lead</li><li>Property</li><li>Visit</li><li>Pipeline</li><li>Report</li></ol>
       </article>
-      <article class="module" id="travel">
+      <article class="module pane" id="travel" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#travel"/></svg>
         <h3>Travel &amp; Hospitality</h3>
         <p>Trips are shared objects: an itinerary, saved places, and a notification when something moves.</p>
@@ -117,7 +133,7 @@
         <ul class="caps"><li>Itineraries</li><li>Bookings</li><li>Saved places</li><li>Notifications</li></ul>
         <ol class="flow"><li>Plan</li><li>Itinerary</li><li>Saved place</li><li>Booking</li><li>Notification</li></ol>
       </article>
-      <article class="module" id="media">
+      <article class="module pane" id="media" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#media"/></svg>
         <h3>Media &amp; Content</h3>
         <p>Publishing is a desk: drafts, a library, moderation, search, and a view of what was read.</p>
@@ -125,7 +141,7 @@
         <ul class="caps"><li>Publishing</li><li>Media library</li><li>Moderation</li><li>Search</li><li>Analytics</li></ul>
         <ol class="flow"><li>Draft</li><li>Library</li><li>Review</li><li>Publish</li><li>Analytics</li></ol>
       </article>
-      <article class="module" id="custom">
+      <article class="module pane" id="custom" data-pane role="tabpanel">
         <svg class="ico" aria-hidden="true"><use href="assets/icons.svg#custom"/></svg>
         <h3>Custom Solutions</h3>
         <p>If the workflow does not fit a category, we still design the product around the people who use it. The starting point is the task, not a template.</p>
@@ -133,6 +149,7 @@
         <ul class="caps"><li>Who does the work</li><li>What exists today</li><li>What should change</li></ul>
         <ol class="flow"><li>Workflow</li><li>Roles</li><li>Data</li><li>Interface</li><li>Release</li></ol>
       </article>
+      </div>
     </div>
   </section>
   <section class="section">
@@ -161,5 +178,6 @@
 </footer>
 </div>
 <script src="script.js"></script>
+<script src="motion.js"></script>
 </body>
 </html>

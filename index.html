@@ -20,6 +20,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="craft.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Organization","name":"Shriram & Team","url":"https://mrrammorkhandikar.github.io/ChatGpt_Test_01/","email":"rammorkhandikar@gmail.com","telephone":"+91-72188-60925","slogan":"Build · Automate · Scale","founder":{"@type":"Person","name":"Shriram Morkhandikar","jobTitle":"AI / GenAI, Full-Stack, Team Lead","email":"rammorkhandikar@gmail.com"}}
 </script>
@@ -49,10 +50,10 @@
 </header>
 
 <main id="content">
-<section class="hero-stage">
+<section class="hero-stage hero-art">
   <div>
     <p class="kicker">Web · Mobile · Desktop · AI · UI/UX</p>
-    <h1><span>Your Idea.</span><span class="grad">Our Team.</span><span>Real Solutions.</span></h1>
+    <h1><span>Your Idea.</span><span class="grad">Our Team.</span><span>Real</span><span class="outline">Solutions.</span></h1>
     <p class="lede">We design and build digital products around the workflows people actually use — responsive web applications, mobile products, AI assistants, automation tools and internal systems.</p>
     <div class="hero-actions">
       <a class="btn btn-orange" href="contact.html">Start a Project →</a>
@@ -70,18 +71,28 @@
   <div class="hero-visual">
     <figure class="hero-frame">
       <img src="assets/about-portrait.png" alt="Shriram Morkhandikar, AI and full-stack team lead">
-      <ul class="float-notes" aria-label="Studio capabilities">
-        <li>AI / GenAI</li>
-        <li>Full-Stack</li>
-        <li>Product Engineering</li>
-        <li>Automation</li>
-      </ul>
+      <span class="coord">01 / Portrait</span>
       <figcaption class="status-card">
         <span class="live"><i></i> Studio lead</span>
         <strong>Shriram Morkhandikar</strong>
         <span class="mini-pills"><em>AI / GenAI</em><em>Full-Stack</em><em>Team Lead</em></span>
       </figcaption>
     </figure>
+    <div class="float-layer" aria-hidden="true">
+      <div class="float-win win-matter">
+        <b>Matters</b>
+        <i class="on">Matter 04</i>
+        <i>Documents</i>
+        <i>Access</i>
+      </div>
+      <div class="float-win win-ai">
+        <b>Assistant</b>
+        <span>Clause retrieved from the matter file.</span>
+      </div>
+    </div>
+    <ul class="tech-tags" aria-label="Disciplines">
+      <li>AI</li><li>API</li><li>UI</li><li>DATA</li><li>PRODUCT</li>
+    </ul>
   </div>
 </section>
 
@@ -92,73 +103,88 @@
   <article class="stat"><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#years"/></svg><strong>3+</strong><span>Years Experience</span></article>
 </section>
 
-<section class="section">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">What we build</p>
-      <h2>Capabilities that can stand alone, or ship as one product.</h2>
+<section class="section build-stage switch" data-switch>
+  <div class="build-copy">
+    <p class="eyebrow">What we build</p>
+    <h2 class="display-statement">We build digital products around real workflows.</h2>
+    <div class="word-nav" role="tablist" aria-label="Capabilities">
+      <button type="button" class="is-on" role="tab" data-panel="cap-web" aria-controls="cap-web">Web</button>
+      <button type="button" role="tab" data-panel="cap-mobile" aria-controls="cap-mobile">Mobile</button>
+      <button type="button" role="tab" data-panel="cap-ai" aria-controls="cap-ai">AI</button>
+      <button type="button" role="tab" data-panel="cap-auto" aria-controls="cap-auto">Automation</button>
+      <button type="button" role="tab" data-panel="cap-desk" aria-controls="cap-desk">Desktop</button>
+      <button type="button" role="tab" data-panel="cap-ux" aria-controls="cap-ux">UI/UX</button>
     </div>
-    <p>Pick a single discipline or assemble the team around the whole workflow, from the first sketch to production.</p>
   </div>
-  <ol class="offer">
-    <li><a class="svc" href="services.html#web"><span class="svc-top"><span class="num">01</span><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#web"/></svg></span><h3>Web Development</h3><p>Sites, dashboards, portals and internal tools with APIs, roles and a production deploy.</p><p class="typical"><b>Typical work</b>Responsive UI · Authentication · Dashboards</p><span class="arrow" aria-hidden="true">→</span></a></li>
-    <li><a class="svc" href="services.html#mobile"><span class="svc-top"><span class="num">02</span><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#mobile"/></svg></span><h3>Mobile App Development</h3><p>Android and cross-platform apps that share accounts and logic with the web product.</p><p class="typical"><b>Typical work</b>Accounts · Notifications · Offline-friendly flows</p><span class="arrow" aria-hidden="true">→</span></a></li>
-    <li><a class="svc" href="services.html#ai"><span class="svc-top"><span class="num">03</span><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#ai"/></svg></span><h3>AI &amp; Automation</h3><p>Assistants that retrieve from your documents, respect access, and sit inside the existing workflow.</p><p class="typical"><b>Typical work</b>RAG · Access control · LLM integration</p><span class="arrow" aria-hidden="true">→</span></a></li>
-    <li><a class="svc" href="services.html#design"><span class="svc-top"><span class="num">04</span><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#design"/></svg></span><h3>UI/UX Design</h3><p>Flows, wireframes and screens aimed at the task people repeat, before the heavy build.</p><p class="typical"><b>Typical work</b>Flows · Prototypes · Interface design</p><span class="arrow" aria-hidden="true">→</span></a></li>
-    <li><a class="svc" href="services.html#desktop"><span class="svc-top"><span class="num">05</span><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#desktop"/></svg></span><h3>Desktop Applications</h3><p>Operational tools for local data, reporting and processing that should not live in a browser tab.</p><p class="typical"><b>Typical work</b>Local data · Reporting · Automation</p><span class="arrow" aria-hidden="true">→</span></a></li>
-    <li><a class="svc" href="services.html#support"><span class="svc-top"><span class="num">06</span><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#support"/></svg></span><h3>Consulting &amp; Support</h3><p>Technical direction, QA, maintenance and iteration after the product is in real use.</p><p class="typical"><b>Typical work</b>QA · Maintenance · Product iteration</p><span class="arrow" aria-hidden="true">→</span></a></li>
+  <div class="build-visual">
+    <article class="pane is-on" id="cap-web" data-pane role="tabpanel">
+      <div class="shot legal" aria-hidden="true"><span class="shot-tag">Concept</span><div class="ui"><div class="sideb"><i class="on"></i><i></i><i></i><i></i><i></i></div><div class="mainb"><div class="topbar"></div><div class="cards2"><b></b><b></b><b></b></div><div class="list"><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
+      <ol class="flow"><li>Interface</li><li>API</li><li>Roles</li><li>Deploy</li></ol>
+      <p>Sites, dashboards, portals and internal tools. The useful version is the one people can sign in to and finish the task.</p>
+      <a class="text-link" href="services.html#web">Web development →</a>
+    </article>
+    <article class="pane" id="cap-mobile" data-pane role="tabpanel">
+      <div class="shot task" aria-hidden="true"><span class="shot-tag">Concept</span><div class="desk"><div class="win"><b>Tasks</b><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div><div class="phone"><i></i><i class="on"></i><i></i><i></i><i class="btn"></i></div></div></div>
+      <ol class="flow"><li>Account</li><li>Task</li><li>Phone</li><li>Notify</li></ol>
+      <p>Android and cross-platform apps that share accounts and logic with the web product.</p>
+      <a class="text-link" href="services.html#mobile">Mobile apps →</a>
+    </article>
+    <article class="pane" id="cap-ai" data-pane role="tabpanel">
+      <div class="shot chat" aria-hidden="true"><span class="shot-tag">Concept</span><div class="chatui"><div class="bubble">Retrieved from the matter file.</div><div class="bubble me">Show the clause</div><div class="input"></div></div></div>
+      <ol class="flow"><li>Document</li><li>Retrieval</li><li>AI</li><li>Answer</li><li>Workflow</li></ol>
+      <p>Assistants that retrieve from your documents, respect access, and sit inside the existing workflow.</p>
+      <a class="text-link" href="services.html#ai">AI &amp; automation →</a>
+    </article>
+    <article class="pane" id="cap-auto" data-pane role="tabpanel">
+      <div class="shot deskapp" aria-hidden="true"><span class="shot-tag">Concept</span><div class="laptop"><div class="screen"><div class="bars"><i></i><i></i><i></i><i></i></div><div class="rows"><i></i><i></i></div></div><div class="base"></div></div></div>
+      <ol class="flow"><li>Capture</li><li>Rules</li><li>Run</li><li>Report</li></ol>
+      <p>The repetitive steps around a workflow: processing, a report, and the handoff back to the team.</p>
+      <a class="text-link" href="services.html#ai">Automation →</a>
+    </article>
+    <article class="pane" id="cap-desk" data-pane role="tabpanel">
+      <div class="shot deskapp" aria-hidden="true"><span class="shot-tag">Concept</span><div class="laptop"><div class="screen"><div class="bars"><i></i><i></i><i></i><i></i></div><div class="rows"><i></i><i></i></div></div><div class="base"></div></div></div>
+      <ol class="flow"><li>Local data</li><li>Process</li><li>Report</li><li>Export</li></ol>
+      <p>Operational tools for local data and reporting that should not live in a browser tab.</p>
+      <a class="text-link" href="services.html#desktop">Desktop applications →</a>
+    </article>
+    <article class="pane" id="cap-ux" data-pane role="tabpanel">
+      <div class="shot health" aria-hidden="true"><span class="shot-tag">Concept</span><div class="med"><div class="topbar"></div><div class="cards2"><b></b><b></b></div><div class="cal"><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i></div></div></div>
+      <ol class="flow"><li>Flow</li><li>Wireframe</li><li>Prototype</li><li>Interface</li></ol>
+      <p>Flows, wireframes and screens aimed at the task people repeat, before the heavy build.</p>
+      <a class="text-link" href="services.html#design">UI/UX design →</a>
+    </article>
+  </div>
+</section>
+
+<section class="section work-feature">
+  <p class="eyebrow">What we have built</p>
+  <h2 class="display-statement">Fifteen directions.<br><span class="outline">One discipline.</span></h2>
+  <p class="work-note">Concept interfaces of the workflow, not screenshots of a live deployment.</p>
+  <a class="hero-canvas" href="projects.html#legal-assist">
+    <div class="shot legal"><span class="shot-tag">Concept · AI · Web</span><div class="ui"><div class="sideb"><i class="on"></i><i></i><i></i><i></i><i></i></div><div class="mainb"><div class="topbar"></div><div class="cards2"><b></b><b></b><b></b></div><div class="list"><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
+    <div class="canvas-meta">
+      <span>01 · Legal &amp; law</span>
+      <strong>Legal Assist Platform</strong>
+      <em>Next.js · FastAPI · PostgreSQL</em>
+    </div>
+  </a>
+  <ol class="work-index">
+    <li><a href="projects.html#legal-assist"><b>01</b> Legal Assist Platform <small>Next.js</small></a></li>
+    <li><a href="projects.html#taskflow"><b>02</b> TaskFlow Pro <small>React</small></a></li>
+    <li><a href="projects.html#firm-chat"><b>03</b> Firm Knowledge Chatbot <small>Python</small></a></li>
+    <li><a href="projects.html#socialconnect"><b>04</b> SocialConnect <small>Next.js</small></a></li>
+    <li><a href="projects.html#healthcare"><b>05</b> Healthcare Booking <small>React</small></a></li>
+    <li><a href="projects.html#automation"><b>06</b> Business Automation Tool <small>Python</small></a></li>
+    <li><a href="projects.html#learnhub"><b>07</b> LearnHub <small>Next.js</small></a></li>
+    <li><a href="projects.html#propertydesk"><b>08</b> PropertyDesk <small>React</small></a></li>
+    <li><a href="projects.html#hrpulse"><b>09</b> HR Pulse <small>React</small></a></li>
+    <li><a href="projects.html#visionqa"><b>10</b> Vision QA <small>PyTorch</small></a></li>
+    <li><a href="projects.html#marketcart"><b>11</b> MarketCart <small>Next.js</small></a></li>
+    <li><a href="projects.html#ngoconnect"><b>12</b> NGO Connect <small>React</small></a></li>
+    <li><a href="projects.html#financeflow"><b>13</b> FinanceFlow <small>React</small></a></li>
+    <li><a href="projects.html#travelmate"><b>14</b> TravelMate <small>Flutter</small></a></li>
+    <li><a href="projects.html#mediadesk"><b>15</b> MediaDesk <small>Next.js</small></a></li>
   </ol>
-</section>
-
-<section class="section">
-  <p class="eyebrow">Built around the workflow</p>
-  <h2 class="statement">The useful question is what people do today, and where that breaks.</h2>
-  <div class="strip-grid">
-    <p><strong>See the work</strong>Users, roles, data and the path they already follow. The product is shaped around that, not a generic feature list.</p>
-    <p><strong>Make it operable</strong>Authentication, permissions and the screens someone uses every day — a dashboard, a queue, a form, a mobile step.</p>
-    <p><strong>Connect the answer</strong>When AI is useful, it retrieves from the documents and systems the team already trusts, with access controls.</p>
-    <p><strong>Stay after launch</strong>Deployment, handover and support so the first release is a beginning, not the end of the engagement.</p>
-  </div>
-</section>
-
-<section class="section">
-  <div class="section-head">
-    <div>
-      <p class="eyebrow">What we have built</p>
-      <h2>Product directions across real workflows.</h2>
-    </div>
-    <p>Fifteen directions across web, mobile, AI and desktop. Previews are concept interfaces, not claimed screenshots.</p>
-  </div>
-  <div class="feature-work">
-    <article class="project lead">
-      <div class="shot legal"><span class="shot-tag">Concept · AI · Web</span><div class="ui"><div class="sideb"><i class="on"></i><i></i><i></i><i></i><i></i></div><div class="mainb"><div class="topbar"></div><div class="cards2"><b></b><b></b><b></b></div><div class="list"><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
-      <div class="project-body">
-        <p class="concept">Legal &amp; law</p>
-        <h3>Legal Assist Platform</h3>
-        <p>A working environment for law firms: documents, task assignment and a firm knowledge assistant in one place.</p>
-        <ul class="caps"><li>Document management</li><li>Task assignment</li><li>Knowledge assistant</li><li>Access controls</li></ul>
-        <div class="tags"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span></div>
-        <a class="text-link" href="projects.html#legal-assist">Explore product direction →</a>
-      </div>
-    </article>
-    <article class="project">
-      <div class="shot task"><span class="shot-tag">Concept · Web · Mobile</span><div class="desk"><div class="win"><b>TaskFlow</b><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div><div class="phone"><i></i><i class="on"></i><i></i><i></i><i class="btn"></i></div></div></div>
-      <div class="project-body"><p class="concept">Operations</p><h3>TaskFlow Pro</h3><p>Employee tasks on a web dashboard, with an Android companion for the same work.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div><a class="text-link" href="projects.html#taskflow">Explore product direction →</a></div>
-    </article>
-    <article class="project">
-      <div class="shot chat"><span class="shot-tag">Concept · AI · Web</span><div class="chatui"><div class="bubble">Hello, I'm your Firm Assistant</div><div class="bubble me">Show open matters</div><div class="input"></div></div></div>
-      <div class="project-body"><p class="concept">Knowledge</p><h3>Firm Knowledge Chatbot</h3><p>A RAG assistant over firm documents, with access controls, an admin panel and team workspaces.</p><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Vector DB</span></div><a class="text-link" href="projects.html#firm-chat">Explore product direction →</a></div>
-    </article>
-    <article class="project">
-      <div class="shot social"><span class="shot-tag">Concept · Web · Mobile</span><div class="soc"><div class="soc-nav"></div><div class="feed"><div class="posthead"><img src="assets/team-3.png" alt=""><b>SocialConnect</b></div><div class="photo"></div></div></div></div>
-      <div class="project-body"><h3>SocialConnect</h3><p>Posts, messaging, groups, notifications and moderation for a community product.</p><div class="tags"><span class="tag">Next.js</span><span class="tag">Socket.io</span><span class="tag">PostgreSQL</span></div><a class="text-link" href="projects.html#socialconnect">Explore product direction →</a></div>
-    </article>
-    <article class="project">
-      <div class="shot health"><span class="shot-tag">Concept · Web</span><div class="med"><div class="topbar"></div><div class="cards2"><b></b><b></b></div><div class="cal"><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i></div></div></div>
-      <div class="project-body"><h3>Healthcare Booking</h3><p>Appointments, payments, doctor and patient dashboards, and notifications.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MySQL</span></div><a class="text-link" href="projects.html#healthcare">Explore product direction →</a></div>
-    </article>
-  </div>
-  <p class="more"><a class="text-link" href="projects.html">View all 15 product directions →</a></p>
 </section>
 
 <section class="section">
@@ -230,7 +256,7 @@
 <footer class="site-footer">
   <div class="footer-lead">
     <p class="eyebrow">Let's build</p>
-    <h2>Have something worth building?</h2>
+    <h2>Let's build<br>something useful.</h2>
     <a class="btn btn-orange" href="contact.html">Start a Project →</a>
   </div>
   <div class="footer-meta">
@@ -251,5 +277,6 @@
 </footer>
 </div>
 <script src="script.js"></script>
+<script src="motion.js"></script>
 </body>
 </html>

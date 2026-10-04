@@ -2,7 +2,7 @@
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   if (!reduce && "IntersectionObserver" in window) {
-    var nodes = document.querySelectorAll(".hero-stage, .proof, .section, .page-hero, .page-grid, .band, .footer-lead");
+    var nodes = document.querySelectorAll(".proof, .section, .page-hero, .page-grid:not([data-reel]), .band, .footer-lead");
     var seen = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (!entry.isIntersecting) return;
@@ -74,6 +74,9 @@
           }, 180);
         }
       });
+      window.setTimeout(function () {
+        document.dispatchEvent(new CustomEvent("projects:filtered"));
+      }, reduce ? 0 : 200);
     });
   });
 
@@ -83,6 +86,11 @@
     if (!buttons.length || !panes.length) return;
     root.classList.add("is-live");
     var activate = function (id) {
+      var known = false;
+      buttons.forEach(function (b) {
+        if (b.getAttribute("data-panel") === id) known = true;
+      });
+      if (!known) return;
       buttons.forEach(function (b) {
         var on = b.getAttribute("data-panel") === id;
         b.classList.toggle("is-on", on);
@@ -96,6 +104,8 @@
       b.setAttribute("aria-selected", b.classList.contains("is-on") ? "true" : "false");
       b.addEventListener("click", function () { activate(b.getAttribute("data-panel")); });
     });
+    var hash = window.location.hash.replace("#", "");
+    if (hash) activate(hash);
   });
 
   var sheet = document.querySelector("#sheet");

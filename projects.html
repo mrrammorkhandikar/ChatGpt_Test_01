@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="craft.css">
 <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")}catch(e){}</script>
 </head>
 <body>
@@ -32,10 +33,10 @@
 <main id="content">
   <section class="page-hero">
     <p class="eyebrow">Projects</p>
-    <h1>15 product directions. <em class="grad">Built around real workflows.</em></h1>
+    <h1>15+<br>project<br>directions.</h1>
     <p>Web apps, mobile products, AI assistants, desktop tools and business systems. The previews are concept interfaces — stylized views of the workflow, not screenshots of a live deployment. Filter by the kind of product you have in mind.</p>
   </section>
-  <section class="page-grid">
+  <section class="page-grid" data-reel>
     <div class="filters" data-filter-bar="#all-projects" role="toolbar" aria-label="Filter projects">
       <button class="active" type="button" data-filter="all">All</button>
       <button type="button" data-filter="web">Web Apps</button>
@@ -105,6 +106,7 @@
         <div class="project-body"><p class="concept">Media</p><h3>MediaDesk</h3><p>Editorial publishing, moderation, a media library, search and analytics.</p><div class="tags"><span class="tag">Next.js</span><span class="tag">PostgreSQL</span><span class="tag">CMS</span></div><button class="explore" type="button" data-open="dossier-mediadesk">Explore product direction →</button></div>
       </article>
     </div>
+    <div class="reel-progress" aria-hidden="true"><i></i></div>
   </section>
 
   <div class="dossier" id="dossier-legal-assist"><p class="concept">Concept interface · Legal &amp; law</p><h3>Legal Assist Platform</h3><p>Designed around a firm that already has documents, tasks and questions in different places. The direction is one working environment rather than three tools.</p><h4>What it is built to support</h4><ul class="check"><li>Document management for the matter at hand</li><li>Task assignment so work has an owner</li><li>A knowledge assistant over firm material</li><li>Access controls so the assistant respects who may see what</li></ul><p>Built with Next.js, FastAPI and PostgreSQL.</p></div>
@@ -139,6 +141,9 @@
   <div class="sheet-top"><p class="concept">Product direction</p><button class="sheet-close" type="button" data-close>Close</button></div>
   <div class="sheet-body"></div>
 </dialog>
+<script src="assets/vendor/gsap.min.js"></script>
+<script src="assets/vendor/ScrollTrigger.min.js"></script>
 <script src="script.js"></script>
+<script src="motion.js"></script>
 </body>
 </html>
