@@ -16,6 +16,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="craft.css">
+<link rel="stylesheet" href="product.css">
 <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")}catch(e){}</script>
 </head>
 <body>
@@ -46,63 +47,118 @@
     </div>
     <div class="project-grid" id="all-projects">
       <article class="project lead" id="legal-assist" data-cat="ai">
-        <div class="shot legal"><span class="shot-tag">Concept · AI · Web</span><div class="ui"><div class="sideb"><i class="on"></i><i></i><i></i><i></i><i></i></div><div class="mainb"><div class="topbar"></div><div class="cards2"><b></b><b></b><b></b></div><div class="list"><i></i><i></i><i></i><i></i><i></i></div></div></div></div>
-        <div class="project-body"><p class="concept">Legal &amp; law</p><h3>Legal Assist Platform</h3><p>A workflow platform for law firms that brings document management, task assignment and firm knowledge access into one working environment.</p><ul class="caps"><li>Document management</li><li>Task assignment</li><li>Knowledge assistant</li><li>Access controls</li></ul><div class="tags"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span></div><button class="explore" type="button" data-open="dossier-legal-assist">Explore product direction →</button></div>
+        <div class="shot"><div class="app" aria-hidden="true">
+          <div class="app-top"><strong>Legal Assist</strong><span>Concept interface</span><i>Partner</i></div>
+          <div class="app-tabs"><b class="on">Matters</b><b>Documents</b><b>Tasks</b><b>Assistant</b><b>Access</b></div>
+          <div class="app-split">
+            <div class="app-side">
+              <div class="rec on"><b>Matter 04</b><small>NDA · Active</small></div>
+              <div class="rec"><b>Matter 11</b><small>Filing · Review</small></div>
+            </div>
+            <div class="app-main">
+              <div class="rec"><b>Engagement letter</b><small>PDF · Partner</small><em>Ready</em></div>
+              <div class="ask"><b>Assistant</b><small>Clause retrieved from the matter file.</small></div>
+            </div>
+          </div>
+        </div></div>
+        <div class="project-body"><p class="concept">Legal &amp; law</p><h3>Legal Assist Platform</h3><p>A workflow platform for law firms that brings document management, task assignment and firm knowledge access into one working environment.</p><p class="case-line"><span>Workflow</span> Matter → Documents → Tasks → Assistant</p><p class="case-line"><span>System</span> Web → API → Retrieval → Database</p><ul class="caps"><li>Document management</li><li>Task assignment</li><li>Knowledge assistant</li><li>Access controls</li></ul><div class="tags"><span class="tag">Next.js</span><span class="tag">FastAPI</span><span class="tag">PostgreSQL</span></div><button class="explore" type="button" data-open="dossier-legal-assist">Explore product direction →</button></div>
       </article>
       <article class="project mid" id="taskflow" data-cat="mobile">
-        <div class="shot task"><span class="shot-tag">Concept · Web · Mobile</span><div class="desk"><div class="win"><b>TaskFlow</b><i class="on"></i><i></i><i></i><i></i><i></i><i></i></div><div class="phone"><i></i><i class="on"></i><i></i><i></i><i class="btn"></i></div></div></div>
-        <div class="project-body"><p class="concept">Operations</p><h3>TaskFlow Pro</h3><p>Employee task management with a web dashboard and an Android app for the same work.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div><button class="explore" type="button" data-open="dossier-taskflow">Explore product direction →</button></div>
+        <div class="shot"><div class="app task" aria-hidden="true">
+          <div class="app-top"><strong>TaskFlow</strong><span>Concept interface</span><i>Desk + phone</i></div>
+          <div class="app-tabs"><b class="on">Today</b><b>Team</b><b>Mine</b></div>
+          <div class="app-split">
+            <div class="app-main">
+              <div class="rec on"><b>Review client packet</b><small>Priya · Due today</small><em class="wait">Doing</em></div>
+              <div class="rec"><b>Assign filing</b><small>Ops · Tomorrow</small><em>Next</em></div>
+            </div>
+            <div class="phone-mini"><b>Phone</b><small class="on">Review packet</small><small>Assign filing</small><small>Notify team</small></div>
+          </div>
+        </div></div>
+        <div class="project-body"><p class="concept">Operations</p><h3>TaskFlow Pro</h3><p>Employee task management with a web dashboard and an Android app for the same work.</p><p class="case-line"><span>Workflow</span> Account → Task → Phone → Notify</p><p class="case-line"><span>System</span> Web → API → Mobile → Database</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div><button class="explore" type="button" data-open="dossier-taskflow">Explore product direction →</button></div>
       </article>
       <article class="project mid" id="firm-chat" data-cat="ai">
-        <div class="shot chat"><span class="shot-tag">Concept · AI · Web</span><div class="chatui"><div class="bubble">Hello, I'm your Firm Assistant</div><div class="bubble me">Show open matters</div><div class="input"></div></div></div>
-        <div class="project-body"><p class="concept">Knowledge</p><h3>Firm Knowledge Chatbot</h3><p>A RAG chatbot over firm documents, with access controls, an admin panel and team workspaces.</p><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Vector DB</span></div><button class="explore" type="button" data-open="dossier-firm-chat">Explore product direction →</button></div>
+        <div class="shot"><div class="app chat" aria-hidden="true">
+          <div class="app-top"><strong>Firm Assistant</strong><span>Concept interface</span><i>Workspace</i></div>
+          <div class="app-tabs"><b class="on">Ask</b><b>Sources</b><b>Access</b><b>Admin</b></div>
+          <div class="thread">
+            <div class="msg me">Show open matters I can see.</div>
+            <div class="msg"><b>3 matters</b><small>Retrieved only from documents this role can open.</small></div>
+            <div class="src"><b>Engagement letter</b><small>Source · Matter 04</small></div>
+            <div class="composer"><span>Ask about a document…</span><em>Send</em></div>
+          </div>
+        </div></div>
+        <div class="project-body"><p class="concept">Knowledge</p><h3>Firm Knowledge Chatbot</h3><p>A RAG chatbot over firm documents, with access controls, an admin panel and team workspaces.</p><p class="case-line"><span>Workflow</span> Question → Documents → Retrieval → Answer</p><p class="case-line"><span>System</span> Web → API → Vector store → Access</p><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Vector DB</span></div><button class="explore" type="button" data-open="dossier-firm-chat">Explore product direction →</button></div>
       </article>
       <article class="project" id="socialconnect" data-cat="mobile">
-        <div class="shot social"><span class="shot-tag">Concept · Web · Mobile</span><div class="soc"><div class="soc-nav"></div><div class="feed"><div class="posthead"><img src="assets/team-3.png" alt=""><b>SocialConnect</b></div><div class="photo"></div></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>SocialConnect</strong><span>Concept interface</span><i>Member</i></div><div class="app-tabs"><b class="on">Feed</b><b>Groups</b><b>Messages</b><b>Moderation</b></div><div class="app-list"><div class="rec on"><b>Studio update</b><small>Group · Product</small><em>Posted</em></div><div class="rec"><b>Report queue</b><small>Needs a moderator</small><em class="wait">Hold</em></div></div></div></div>
         <div class="project-body"><p class="concept">Community</p><h3>SocialConnect</h3><p>Posts, messaging, groups, notifications and content moderation.</p><div class="tags"><span class="tag">Next.js</span><span class="tag">Socket.io</span><span class="tag">PostgreSQL</span></div><button class="explore" type="button" data-open="dossier-socialconnect">Explore product direction →</button></div>
       </article>
       <article class="project" id="healthcare" data-cat="web">
-        <div class="shot health"><span class="shot-tag">Concept · Web</span><div class="med"><div class="topbar"></div><div class="cards2"><b></b><b></b></div><div class="cal"><i></i><i class="on"></i><i></i><i class="on"></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></div></div></div>
-        <div class="project-body"><p class="concept">Healthcare</p><h3>Healthcare Booking</h3><p>Doctor appointments with payments, dashboards and notifications.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MySQL</span></div><button class="explore" type="button" data-open="dossier-healthcare">Explore product direction →</button></div>
+        <div class="shot"><div class="app care" aria-hidden="true">
+          <div class="app-top"><strong>Clinic desk</strong><span>Concept interface</span><i>Front desk</i></div>
+          <div class="app-tabs"><b>Patients</b><b class="on">Appointments</b><b>Doctors</b><b>Payments</b><b>Alerts</b></div>
+          <div class="app-split">
+            <div class="app-side">
+              <div class="rec on"><b>A. Rao</b><small>10:30 · Dr. Iyer</small></div>
+              <div class="rec"><b>M. Khan</b><small>11:00 · Confirmed</small></div>
+            </div>
+            <div class="app-main">
+              <div class="meta-row"><span><b>Paid</b></span><span>Dr. Iyer</span><span class="hot">Notify sent</span></div>
+              <div class="rec"><b>Room 2</b><small>Today · confirmation sent</small><em>Booked</em></div>
+            </div>
+          </div>
+        </div></div>
+        <div class="project-body"><p class="concept">Healthcare</p><h3>Healthcare Booking</h3><p>Doctor appointments with payments, dashboards and notifications.</p><p class="case-line"><span>Workflow</span> Patient → Appointment → Payment → Doctor → Notification</p><p class="case-line"><span>System</span> Web → API → Payments → Alerts</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MySQL</span></div><button class="explore" type="button" data-open="dossier-healthcare">Explore product direction →</button></div>
       </article>
       <article class="project" id="automation" data-cat="desktop">
-        <div class="shot deskapp"><span class="shot-tag">Concept · Desktop</span><div class="laptop"><div class="screen"><div class="bars"><i></i><i></i><i></i><i></i></div><div class="rows"><i></i><i></i></div></div><div class="base"></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>Automation desk</strong><span>Concept interface</span><i>Local</i></div><div class="app-tabs"><b class="on">Inbox</b><b>Rules</b><b>Report</b></div><div class="app-list"><div class="rec on"><b>Morning batch</b><small>CSV · this machine</small><em class="wait">Running</em></div><div class="rec"><b>Export</b><small>Handed to the operator</small><em>Ready</em></div></div></div></div>
         <div class="project-body"><p class="concept">Desktop</p><h3>Business Automation Tool</h3><p>A desktop application for data processing, reporting and automation.</p><div class="tags"><span class="tag">Python</span><span class="tag">PyQt</span><span class="tag">SQLite</span></div><button class="explore" type="button" data-open="dossier-automation">Explore product direction →</button></div>
       </article>
       <article class="project" id="learnhub" data-cat="web">
-        <div class="shot product tone-web courses"><span class="shot-tag">Concept · Web</span><div class="frame"><header><b>LearnHub</b><i class="pill"></i></header><div class="tiles"><span></span><span></span><span></span></div><div class="lines"><i></i><i></i><i></i><i></i></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>LearnHub</strong><span>Concept interface</span><i>Learner</i></div><div class="app-tabs"><b class="on">Courses</b><b>Assess</b><b>Progress</b><b>Admin</b></div><div class="app-list"><div class="rec on"><b>Contract basics</b><small>Lesson 4 of 12</small><em class="wait">Open</em></div><div class="rec"><b>Quiz 02</b><small>Admin can publish</small><em>Ready</em></div></div></div></div>
         <div class="project-body"><p class="concept">Education</p><h3>LearnHub</h3><p>Courses, assessments, payments and an admin console for content.</p><div class="tags"><span class="tag">Next.js</span><span class="tag">PostgreSQL</span><span class="tag">APIs</span></div><button class="explore" type="button" data-open="dossier-learnhub">Explore product direction →</button></div>
       </article>
       <article class="project" id="propertydesk" data-cat="web">
-        <div class="shot product tone-web sheet"><span class="shot-tag">Concept · Web</span><div class="frame"><header><b>PropertyDesk</b><i class="pill"></i></header><div class="lines"><i></i><i></i><i></i><i></i><i></i><i></i></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>PropertyDesk</strong><span>Concept interface</span><i>Agent</i></div><div class="app-tabs"><b class="on">Leads</b><b>Property</b><b>Visits</b><b>Pipeline</b></div><div class="app-list"><div class="rec on"><b>Andheri 2BHK</b><small>Visit Thursday</small><em class="wait">Live</em></div><div class="rec"><b>Lead · Mehta</b><small>Asked for a second look</small><em>Next</em></div></div></div></div>
         <div class="project-body"><p class="concept">Real estate</p><h3>PropertyDesk</h3><p>A CRM for leads, properties, agents, visits and pipeline reporting.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">SQL</span></div><button class="explore" type="button" data-open="dossier-propertydesk">Explore product direction →</button></div>
       </article>
       <article class="project" id="hrpulse" data-cat="mobile">
-        <div class="shot product tone-mobile phone-ui"><span class="shot-tag">Concept · Web · Mobile</span><div class="frame"><header><b>HR Pulse</b></header><div class="tiles"><span></span><span></span></div><div class="lines"><i></i><i></i><i></i><i></i></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>HR Pulse</strong><span>Concept interface</span><i>Employee</i></div><div class="app-tabs"><b class="on">Leave</b><b>Attendance</b><b>Approvals</b></div><div class="app-list"><div class="rec on"><b>Leave request</b><small>Waiting on a manager</small><em class="wait">Pending</em></div><div class="rec"><b>Today</b><small>Checked in</small><em>Ready</em></div></div></div></div>
         <div class="project-body"><p class="concept">People operations</p><h3>HR Pulse</h3><p>An employee portal for profiles, leave, attendance, tasks and manager approvals.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">MongoDB</span></div><button class="explore" type="button" data-open="dossier-hrpulse">Explore product direction →</button></div>
       </article>
       <article class="project" id="visionqa" data-cat="ai">
-        <div class="shot product tone-ai"><span class="shot-tag">Concept · AI · Web</span><div class="frame"><header><b>Vision QA</b><i class="pill"></i></header><div class="tiles"><span></span><span></span><span></span></div><div class="lines"><i></i><i></i><i></i></div></div></div>
-        <div class="project-body"><p class="concept">Computer vision</p><h3>Vision QA</h3><p>A review workflow for image and video annotation, with quality dashboards.</p><div class="tags"><span class="tag">PyTorch</span><span class="tag">FastAPI</span><span class="tag">CV</span></div><button class="explore" type="button" data-open="dossier-visionqa">Explore product direction →</button></div>
+        <div class="shot"><div class="app vision" aria-hidden="true">
+          <div class="app-top"><strong>Vision QA</strong><span>Concept interface</span><i>Reviewer</i></div>
+          <div class="app-tabs"><b>Upload</b><b class="on">Frames</b><b>Annotate</b><b>Review</b><b>Quality</b></div>
+          <div class="app-split">
+            <div class="frame-grid"><i class="on"></i><i></i><i class="flag"></i><i></i><i class="on"></i><i></i></div>
+            <div class="app-main">
+              <div class="rec on"><b>Batch 18</b><small>Frame 42 · label pending</small><em class="wait">Review</em></div>
+              <div class="meta-row"><span><b>QA</b> pass</span><span class="hot">2 flags</span></div>
+            </div>
+          </div>
+        </div></div>
+        <div class="project-body"><p class="concept">Computer vision</p><h3>Vision QA</h3><p>A review workflow for image and video annotation, with quality dashboards.</p><p class="case-line"><span>Workflow</span> Upload → Frames → Annotation → Review → Quality</p><p class="case-line"><span>System</span> Web → API → Model → Review queue</p><div class="tags"><span class="tag">PyTorch</span><span class="tag">FastAPI</span><span class="tag">CV</span></div><button class="explore" type="button" data-open="dossier-visionqa">Explore product direction →</button></div>
       </article>
       <article class="project" id="marketcart" data-cat="web">
-        <div class="shot product tone-web catalog"><span class="shot-tag">Concept · Web</span><div class="frame"><header><b>MarketCart</b><i class="pill"></i></header><div class="tiles"><span></span><span></span><span></span></div><div class="lines"><i></i><i></i><i></i></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>MarketCart</strong><span>Concept interface</span><i>Orders</i></div><div class="app-tabs"><b>Catalog</b><b class="on">Orders</b><b>Inventory</b></div><div class="app-list"><div class="rec on"><b>Order 204</b><small>Paid · pick next</small><em class="wait">Pack</em></div><div class="rec"><b>SKU 18</b><small>Stock low</small><em>Hold</em></div></div></div></div>
         <div class="project-body"><p class="concept">Commerce</p><h3>MarketCart</h3><p>Catalog, inventory, checkout and the order desk behind them.</p><div class="tags"><span class="tag">Next.js</span><span class="tag">Stripe</span><span class="tag">PostgreSQL</span></div><button class="explore" type="button" data-open="dossier-marketcart">Explore product direction →</button></div>
       </article>
       <article class="project" id="ngoconnect" data-cat="web">
-        <div class="shot product tone-web"><span class="shot-tag">Concept · Web</span><div class="frame"><header><b>NGO Connect</b><i class="pill"></i></header><div class="tiles pair"><span></span><span></span></div><div class="lines"><i></i><i></i><i></i></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>NGO Connect</strong><span>Concept interface</span><i>Campaign</i></div><div class="app-tabs"><b class="on">Campaign</b><b>Donors</b><b>Events</b><b>Report</b></div><div class="app-list"><div class="rec on"><b>School kit drive</b><small>Donations open</small><em class="wait">Live</em></div><div class="rec"><b>Volunteer shift</b><small>Saturday desk</small><em>Ready</em></div></div></div></div>
         <div class="project-body"><p class="concept">Non-profit</p><h3>NGO Connect</h3><p>Campaigns, donations, volunteers, events, stories and reporting.</p><div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">PostgreSQL</span></div><button class="explore" type="button" data-open="dossier-ngoconnect">Explore product direction →</button></div>
       </article>
       <article class="project" id="financeflow" data-cat="web">
-        <div class="shot product tone-web bars"><span class="shot-tag">Concept · Web</span><div class="frame"><header><b>FinanceFlow</b><i class="pill"></i></header><div class="chart"><i></i><i></i><i></i><i></i><i></i></div><div class="lines"><i></i><i></i><i></i></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>FinanceFlow</strong><span>Concept interface</span><i>Accounts</i></div><div class="app-tabs"><b class="on">Invoices</b><b>Expenses</b><b>Approvals</b><b>Export</b></div><div class="app-list"><div class="rec on"><b>Invoice 88</b><small>Waiting on approval</small><em class="wait">Review</em></div><div class="rec"><b>Expense</b><small>Ready to export</small><em>Ready</em></div></div></div></div>
         <div class="project-body"><p class="concept">Finance</p><h3>FinanceFlow</h3><p>Invoices, expenses, approvals, dashboards and exportable reporting.</p><div class="tags"><span class="tag">React</span><span class="tag">Python</span><span class="tag">SQL</span></div><button class="explore" type="button" data-open="dossier-financeflow">Explore product direction →</button></div>
       </article>
       <article class="project" id="travelmate" data-cat="mobile">
-        <div class="shot product tone-mobile phone-ui"><span class="shot-tag">Concept · Mobile</span><div class="frame"><header><b>TravelMate</b></header><div class="tiles"><span></span><span></span></div><div class="lines"><i></i><i></i><i></i></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>TravelMate</strong><span>Concept interface</span><i>Shared trip</i></div><div class="app-tabs"><b class="on">Plan</b><b>Places</b><b>Alerts</b></div><div class="app-list"><div class="rec on"><b>Day 2 · Fort</b><small>Saved by the group</small><em class="wait">Next</em></div><div class="rec"><b>Time moved</b><small>Notification sent</small><em>Sent</em></div></div></div></div>
         <div class="project-body"><p class="concept">Travel</p><h3>TravelMate</h3><p>Trip planning, shared itineraries, saved places and notifications.</p><div class="tags"><span class="tag">Flutter</span><span class="tag">Firebase</span><span class="tag">APIs</span></div><button class="explore" type="button" data-open="dossier-travelmate">Explore product direction →</button></div>
       </article>
       <article class="project" id="mediadesk" data-cat="web">
-        <div class="shot product tone-web editorial"><span class="shot-tag">Concept · Web</span><div class="frame"><header><b>MediaDesk</b><i class="pill"></i></header><div class="lines"><i></i><i></i><i></i><i></i><i></i></div></div></div>
+        <div class="shot"><div class="app compact" aria-hidden="true"><div class="app-top"><strong>MediaDesk</strong><span>Concept interface</span><i>Editor</i></div><div class="app-tabs"><b class="on">Drafts</b><b>Library</b><b>Review</b><b>Publish</b></div><div class="app-list"><div class="rec on"><b>Field note</b><small>In review</small><em class="wait">Edit</em></div><div class="rec"><b>Photo set</b><small>Library · ready</small><em>Ready</em></div></div></div></div>
         <div class="project-body"><p class="concept">Media</p><h3>MediaDesk</h3><p>Editorial publishing, moderation, a media library, search and analytics.</p><div class="tags"><span class="tag">Next.js</span><span class="tag">PostgreSQL</span><span class="tag">CMS</span></div><button class="explore" type="button" data-open="dossier-mediadesk">Explore product direction →</button></div>
       </article>
     </div>

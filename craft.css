@@ -483,6 +483,7 @@ body {
   flex: none;
   grid-template-columns: none;
 }
+.page-grid.is-reel .project[hidden] { display: none !important; }
 .page-grid.is-reel .shot,
 .page-grid.is-reel .project.lead .shot,
 .page-grid.is-reel .project.mid .shot,
