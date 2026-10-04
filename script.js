@@ -1,4 +1,18 @@
 (function () {
+  if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && "IntersectionObserver" in window) {
+    const nodes = document.querySelectorAll(".hero-stage, .proof, .section, .page-hero, .page-grid, .band, .footer-lead");
+    const seen = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        entry.target.classList.add("is-in");
+        seen.unobserve(entry.target);
+      });
+    }, { threshold: 0.01, rootMargin: "0px 0px 12% 0px" });
+    nodes.forEach(function (node) { seen.observe(node); });
+  } else {
+    document.documentElement.classList.remove("js");
+  }
+
   const menuBtn = document.querySelector(".menu-btn");
   const links = document.querySelector(".links");
   if (menuBtn && links) {
@@ -17,12 +31,17 @@
   document.querySelectorAll("[data-filter-bar]").forEach(function (bar) {
     const grid = document.querySelector(bar.getAttribute("data-filter-bar"));
     if (!grid) return;
+    bar.querySelectorAll("button").forEach(function (b) {
+      b.setAttribute("aria-pressed", b.classList.contains("active") ? "true" : "false");
+    });
     const featuredOnly = bar.getAttribute("data-featured-only") === "true";
     bar.addEventListener("click", function (event) {
       const btn = event.target.closest("button");
       if (!btn || !bar.contains(btn)) return;
       bar.querySelectorAll("button").forEach(function (b) {
-        b.classList.toggle("active", b === btn);
+        const on = b === btn;
+        b.classList.toggle("active", on);
+        b.setAttribute("aria-pressed", on ? "true" : "false");
       });
       const filter = btn.getAttribute("data-filter");
       grid.querySelectorAll(".project").forEach(function (card) {
