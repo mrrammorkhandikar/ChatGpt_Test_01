@@ -1,29 +1,4 @@
-document.querySelectorAll('.filter').forEach(btn => {
-  btn.addEventListener('click', () => {
-    document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    const filter = btn.dataset.filter;
-    document.querySelectorAll('.project').forEach(card => {
-      card.classList.toggle('hidden', filter !== 'all' && card.dataset.category !== filter);
-    });
-  });
-});
-
-document.querySelectorAll('.details').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const panel = document.getElementById(btn.dataset.target);
-    const open = panel.classList.toggle('open');
-    btn.textContent = open ? 'Hide architecture −' : 'View architecture +';
-  });
-});
-
-document.querySelector('.copy-email')?.addEventListener('click', async (event) => {
-  const email = event.currentTarget.dataset.email;
-  try {
-    await navigator.clipboard.writeText(email);
-    event.currentTarget.textContent = 'Email copied ✓';
-    setTimeout(() => event.currentTarget.textContent = 'Copy email', 1600);
-  } catch {
-    window.location.href = 'mailto:' + email;
-  }
-});
+document.querySelectorAll(".filter").forEach(btn=>btn.addEventListener("click",()=>{document.querySelectorAll(".filter").forEach(x=>x.classList.remove("active"));btn.classList.add("active");const f=btn.dataset.filter;document.querySelectorAll(".case-card").forEach(c=>c.classList.toggle("hidden",f!=="all"&&c.dataset.category!==f))}));
+document.querySelectorAll(".accordion button").forEach(btn=>btn.addEventListener("click",()=>{const a=btn.nextElementSibling;const open=a.classList.toggle("open");btn.setAttribute("aria-expanded",open);btn.querySelector("span").textContent=open?"−":"+"}));
+document.querySelectorAll("[data-copy]").forEach(btn=>btn.addEventListener("click",async()=>{try{await navigator.clipboard.writeText(btn.dataset.copy);const old=btn.textContent;btn.textContent="Copied ✓";setTimeout(()=>btn.textContent=old,1200)}catch(e){}}));
+document.querySelectorAll(".menu-toggle").forEach(btn=>btn.addEventListener("click",()=>document.querySelector(".mobile-menu")?.classList.toggle("open")));
