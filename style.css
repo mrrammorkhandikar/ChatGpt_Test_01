@@ -200,7 +200,7 @@ button { cursor: pointer; }
 .hero-photo img {
   width: 100%; height: 100%;
   object-fit: cover;
-  object-position: 62% 42%;
+  object-position: right 38%;
 }
 .hero-photo:after {
   content: "";
@@ -467,11 +467,12 @@ button { cursor: pointer; }
 
 .industries {
   display: grid;
-  grid-template-columns: 230px 1fr;
+  grid-template-columns: minmax(250px, 290px) 1fr;
   gap: 16px;
   align-items: center;
   margin-top: 16px;
 }
+.ind-head h2 { font-size: 20px; line-height: 1.15; }
 .ind-grid { display: grid; grid-template-columns: repeat(12, 1fr); gap: 8px; }
 .ind {
   min-height: 78px;
@@ -564,6 +565,8 @@ button { cursor: pointer; }
 .page-hero h1 em, .split h2 em { font-style: normal; }
 .page-hero > p { max-width: 680px; color: var(--soft); font-size: 15px; line-height: 1.6; }
 .page-grid { padding: 18px 0 28px; }
+.page-grid .filters { justify-content: flex-start; margin-left: 0; }
+.project-grid .shot { height: 168px; }
 .split { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 28px; align-items: center; }
 .split p { color: var(--soft); line-height: 1.7; font-size: 15px; }
 .portrait {
@@ -646,12 +649,14 @@ button { cursor: pointer; }
     border: 1px solid var(--line);
     border-radius: 14px;
     padding: 8px;
-    z-index: 30;
+    z-index: 40;
+    max-height: calc(100vh - 88px);
+    overflow: auto;
   }
   .links.open { display: flex; }
   .links a { padding: 12px; }
   .links a.active:after { display: none; }
-  .nav { position: relative; }
+  .nav { position: relative; z-index: 40; }
   .hero { min-height: 0; }
   .hero-copy { width: 100%; min-height: 0; padding: 22px 18px 0; }
   .hero-photo { position: relative; width: 100%; height: 320px; inset: auto; }
@@ -661,7 +666,8 @@ button { cursor: pointer; }
   .project-row { grid-auto-columns: 82%; }
   .proj-head, .what-head, .band { align-items: flex-start; flex-direction: column; }
   .filters { margin-left: 0; justify-content: flex-start; }
-  .ind-grid, .cards, .project-grid, .ind-large { grid-template-columns: 1fr; }
+  .cards, .project-grid, .ind-large { grid-template-columns: 1fr; }
+  .ind-grid { grid-template-columns: repeat(3, 1fr); }
   .footer { flex-direction: column; align-items: flex-start; }
   .timeline article { grid-template-columns: 1fr; }
   .scroll-next { display: none; }
