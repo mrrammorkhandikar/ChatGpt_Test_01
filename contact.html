@@ -3,12 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Start a project with Shriram & Team.">
-<title>Contact — Shriram & Team</title>
+<title>Contact — Shriram &amp; Team</title>
+<meta name="description" content="Start a project with Shriram & Team. Email rammorkhandikar@gmail.com or call +91 72188 60925.">
+<link rel="canonical" href="https://mrrammorkhandikar.github.io/ChatGpt_Test_01/contact.html">
+<meta property="og:title" content="Contact — Shriram & Team">
+<meta property="og:description" content="Tell us what you want to build, what exists today and what success looks like.">
+<meta property="og:image" content="https://mrrammorkhandikar.github.io/ChatGpt_Test_01/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")}catch(e){}</script>
 </head>
@@ -26,9 +31,9 @@
 </header>
 <main id="content">
   <section class="page-hero">
-    <p class="eyebrow">CONTACT</p>
+    <p class="eyebrow">Contact</p>
     <h1>Let's build <em class="grad">something useful.</em></h1>
-    <p>Tell us what you want to build, what exists today and what success looks like.</p>
+    <p>Tell us what you want to build, what exists today and what success looks like. A paragraph is enough to start.</p>
   </section>
   <section class="page-grid">
     <div class="contact-grid">
@@ -37,45 +42,69 @@
         <p>Website, web application, Android app, desktop tool, AI assistant or ongoing development.</p>
         <p><a href="mailto:rammorkhandikar@gmail.com">rammorkhandikar@gmail.com</a><br><a href="tel:+917218860925">+91 72188 60925</a></p>
         <p>We read every brief. Include the industry, the users and the deadline if you have one.</p>
+        <p class="hint">The form opens your email app with the brief filled in. It is not sent until you send that email.</p>
       </div>
-      <form class="brief">
-        <label>Name<input name="name" autocomplete="name" required></label>
-        <label>Email<input name="email" type="email" autocomplete="email" required></label>
-        <label>Project type
-          <select name="service">
-            <option>Web Application</option>
-            <option>Mobile Application</option>
-            <option>AI / RAG</option>
-            <option>Desktop Application</option>
-            <option>UI/UX</option>
-            <option>Not sure yet</option>
-          </select>
-        </label>
-        <label>Project details<textarea name="message" required></textarea></label>
+      <form class="brief" novalidate>
+        <fieldset>
+          <legend>What are you building?</legend>
+          <label>Project type
+            <select name="service">
+              <option>Website</option>
+              <option>Web Application</option>
+              <option>Android App</option>
+              <option>Desktop Tool</option>
+              <option>AI Assistant</option>
+              <option>UI/UX</option>
+              <option>Ongoing Development</option>
+              <option>Not sure yet</option>
+            </select>
+          </label>
+          <label><span class="lbl">Industry <span class="optional">Optional</span></span>
+            <input name="industry" autocomplete="organization">
+            <span class="hint">Legal, healthcare, education, or whatever fits. Leave it blank if it is still open.</span>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>Who is it for?</legend>
+          <label><span class="lbl">Target users <span class="optional">Optional</span></span>
+            <input name="users" placeholder="Staff, clients, patients, members">
+          </label>
+          <label><span class="lbl">Timeline <span class="optional">Optional</span></span>
+            <input name="timeline" placeholder="A season, a launch date, or no fixed date">
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>What should we know?</legend>
+          <p class="hint">Tell us what exists today, who uses it, and what you want to improve.</p>
+          <label>Project details
+            <textarea name="message" required></textarea>
+            <span class="field-error" role="alert"></span>
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>How do we reply?</legend>
+          <label>Name
+            <input name="name" autocomplete="name" required>
+            <span class="field-error" role="alert"></span>
+          </label>
+          <label>Email
+            <input name="email" type="email" autocomplete="email" required>
+            <span class="field-error" role="alert"></span>
+          </label>
+        </fieldset>
         <button class="btn btn-orange" type="submit">Send Project Brief →</button>
+        <p class="form-status" role="status" hidden></p>
       </form>
     </div>
   </section>
 </main>
 <footer class="site-footer quiet">
-  <div class="footer-lead">
-    <p class="eyebrow">Let's work together</p>
-    <h2>Have something worth building?</h2>
-    <a class="btn btn-orange" href="contact.html">Start a Project →</a>
-  </div>
   <div class="footer-meta">
     <a class="brand" href="index.html"><span class="mark">SM</span><span><strong>Shriram &amp; Team</strong><small>Build · Automate · Scale</small></span></a>
-    <p>Web · Mobile · Desktop · AI · UI/UX</p>
-    <nav aria-label="Footer">
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="industries.html">Industries</a>
-      <a href="process.html">Process</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <p>Web, mobile, desktop and AI products built around the workflow.</p>
+    <nav aria-label="Footer"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="industries.html">Industries</a><a href="process.html">Process</a><a href="team.html">Team</a><a href="contact.html">Contact</a></nav>
     <a href="mailto:rammorkhandikar@gmail.com">rammorkhandikar@gmail.com</a>
+    <p class="copy">© 2026 Shriram &amp; Team</p>
   </div>
 </footer>
 </div>

@@ -3,12 +3,17 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="How Shriram & Team takes a product from idea to launch and support.">
-<title>Process — Shriram & Team</title>
+<title>Process — Shriram &amp; Team</title>
+<meta name="description" content="Explore, design, build and support. Four stages from idea to production.">
+<link rel="canonical" href="https://mrrammorkhandikar.github.io/ChatGpt_Test_01/process.html">
+<meta property="og:title" content="Process — Shriram & Team">
+<meta property="og:description" content="A clear path from idea to production, with visible milestones.">
+<meta property="og:image" content="https://mrrammorkhandikar.github.io/ChatGpt_Test_01/assets/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Outfit:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 <script>try{if(!matchMedia("(prefers-reduced-motion: reduce)").matches)document.documentElement.classList.add("js")}catch(e){}</script>
 </head>
@@ -26,39 +31,70 @@
 </header>
 <main id="content">
   <section class="page-hero">
-    <p class="eyebrow">PROCESS</p>
+    <p class="eyebrow">Process</p>
     <h1>A clear path from <em class="grad">idea to production.</em></h1>
-    <p>Four steps, visible milestones, and room to adjust when the product teaches us something new.</p>
+    <p>Four steps, visible milestones, and room to adjust when the product teaches us something new. Select a stage to see what that conversation produces.</p>
   </section>
   <section class="page-grid">
-    <div class="steps-large">
-      <article class="step-card"><b>01</b><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#explore"/></svg><h3>Explore &amp; Plan</h3><p>We learn the users, the current workflow and the outcome that would make the project worth it. Scope, priorities and a practical plan come out of that conversation.</p></article>
-      <article class="step-card"><b>02</b><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#prototype"/></svg><h3>Design &amp; Prototype</h3><p>Screens and flows are sketched before the heavy build. You can click through the product and correct the direction while changes are still cheap.</p></article>
-      <article class="step-card"><b>03</b><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#develop"/></svg><h3>Develop &amp; Test</h3><p>We build in short cycles with regular updates. Features land with the checks that matter: roles, data, edge cases and the paths people actually use.</p></article>
-      <article class="step-card"><b>04</b><svg class="ico" aria-hidden="true"><use href="assets/icons.svg#deploy"/></svg><h3>Deploy &amp; Support</h3><p>Launch includes the environment, the handover and a plan for what happens next. Support stays available after the first release.</p></article>
+    <div class="switch process-switch" data-switch>
+      <div class="switch-nav" role="tablist" aria-label="Process stages">
+        <button type="button" class="is-on" role="tab" data-panel="step-1" aria-controls="step-1"><b>01</b><span>Explore &amp; Plan<small>Users, workflow, scope</small></span></button>
+        <button type="button" role="tab" data-panel="step-2" aria-controls="step-2"><b>02</b><span>Design &amp; Prototype<small>Flows and screens</small></span></button>
+        <button type="button" role="tab" data-panel="step-3" aria-controls="step-3"><b>03</b><span>Develop &amp; Test<small>Cycles and checks</small></span></button>
+        <button type="button" role="tab" data-panel="step-4" aria-controls="step-4"><b>04</b><span>Deploy &amp; Support<small>Launch and after</small></span></button>
+      </div>
+      <article class="pane is-on" id="step-1" data-pane role="tabpanel">
+        <p class="eyebrow">Stage 01</p>
+        <h3>Explore &amp; Plan</h3>
+        <p>We learn the users, the current workflow and the outcome that would make the project worth it. Scope, priorities and a practical plan come out of that conversation.</p>
+        <h4>What becomes clear</h4>
+        <ul class="check"><li>Who uses it, and which role does which job</li><li>The workflow as it exists today</li><li>The outcome that would make the work worth doing</li><li>Scope and priorities for the first build</li></ul>
+      </article>
+      <article class="pane" id="step-2" data-pane role="tabpanel">
+        <p class="eyebrow">Stage 02</p>
+        <h3>Design &amp; Prototype</h3>
+        <p>Screens and flows are sketched before the heavy build. You can click through the product and correct the direction while changes are still cheap.</p>
+        <h4>What you can react to</h4>
+        <ul class="check"><li>Flows for the repeated task</li><li>Screens with a readable hierarchy</li><li>A prototype you can click</li><li>Feedback before engineering goes deep</li></ul>
+      </article>
+      <article class="pane" id="step-3" data-pane role="tabpanel">
+        <p class="eyebrow">Stage 03</p>
+        <h3>Develop &amp; Test</h3>
+        <p>We build in short cycles with regular updates. Features land with the checks that matter: roles, data, edge cases and the paths people actually use.</p>
+        <h4>What gets checked</h4>
+        <ul class="check"><li>Features against the agreed scope</li><li>Roles and the data each role can touch</li><li>Edge cases, not only the happy path</li><li>The paths people actually use</li></ul>
+      </article>
+      <article class="pane" id="step-4" data-pane role="tabpanel">
+        <p class="eyebrow">Stage 04</p>
+        <h3>Deploy &amp; Support</h3>
+        <p>Launch includes the environment, the handover and a plan for what happens next. Support stays available after the first release.</p>
+        <h4>What launch includes</h4>
+        <ul class="check"><li>The environment the product runs in</li><li>A handover the team can follow</li><li>The release itself</li><li>Support after the first real users arrive</li></ul>
+      </article>
+    </div>
+  </section>
+  <section class="section">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Communication</p>
+        <h2>Updates you can follow without chasing them.</h2>
+      </div>
+    </div>
+    <div class="principles">
+      <article><h3>A shared sequence</h3><p>Scope, the current cycle and what is next live in one thread. The project manager keeps that sequence visible.</p></article>
+      <article><h3>Something to react to</h3><p>A prototype, a working slice, or a release note. Conversation is anchored to the product, not a status slide.</p></article>
+      <article><h3>Room to correct</h3><p>When use shows a better path, the plan can move. The four stages are a spine, not a lock.</p></article>
     </div>
   </section>
   <section class="band"><div><h2>Want this applied to your idea?</h2><p>Start with a short brief. We will reply with the first sensible step.</p></div><a class="btn btn-orange btn-lg" href="contact.html">Start a Project →</a></section>
 </main>
 <footer class="site-footer">
-  <div class="footer-lead">
-    <p class="eyebrow">Let's work together</p>
-    <h2>Have something worth building?</h2>
-    <a class="btn btn-orange" href="contact.html">Start a Project →</a>
-  </div>
   <div class="footer-meta">
     <a class="brand" href="index.html"><span class="mark">SM</span><span><strong>Shriram &amp; Team</strong><small>Build · Automate · Scale</small></span></a>
-    <p>Web · Mobile · Desktop · AI · UI/UX</p>
-    <nav aria-label="Footer">
-      <a href="about.html">About</a>
-      <a href="services.html">Services</a>
-      <a href="projects.html">Projects</a>
-      <a href="industries.html">Industries</a>
-      <a href="process.html">Process</a>
-      <a href="team.html">Team</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <p>Web, mobile, desktop and AI products built around the workflow.</p>
+    <nav aria-label="Footer"><a href="about.html">About</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="industries.html">Industries</a><a href="process.html">Process</a><a href="team.html">Team</a><a href="contact.html">Contact</a></nav>
     <a href="mailto:rammorkhandikar@gmail.com">rammorkhandikar@gmail.com</a>
+    <p class="copy">© 2026 Shriram &amp; Team</p>
   </div>
 </footer>
 </div>
